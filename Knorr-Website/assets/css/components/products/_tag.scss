@@ -1,0 +1,21 @@
+.tag-container{
+    display: flex;
+    padding:1rem;
+
+    .tag{
+        border:1px solid $green;
+        padding:.8rem 1.5rem;
+        border-radius: 25px;
+        color:$green;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
+    }
+}
+
+
