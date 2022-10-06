@@ -18,8 +18,12 @@
 @import './components/products/featured-product';
 @import './components/products/tag';
 
-
-
+//product-detail
+@import './components/product-detail/product-detail';
+@import './components/product-detail/carousel';
+@import './components/product-detail/faqs';
+@import './components/product-detail/tabs';
+@import './components/product-detail/review-modal';
 .cta-container{
     margin-top: 2rem;
     display: flex;
