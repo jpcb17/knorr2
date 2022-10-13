@@ -190,6 +190,11 @@ html {
   visibility: visible;
 }
 
+.nav__item:hover > .browse {
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav__item:hover > a > i {
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -201,6 +206,53 @@ html {
   color: #ffffff;
   margin-top: 1rem;
   margin-left: 0;
+}
+
+.nav__item .browse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #007a33;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #007a33;
+  border: 1px solid #007a33;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: -1.5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.nav__item .browse__title {
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.nav__item .browse__menu {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.nav__item .browse__item {
+  text-decoration: none;
+}
+
+.nav__item .browse__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.nav__item .browse__link:hover {
+  border-bottom: 2px solid #ffffff;
 }
 
 .nav__link {
@@ -1807,6 +1859,168 @@ html {
   color: #ffffff;
   font-size: 1rem;
   border-radius: 50px;
+}
+
+.review-thread {
+  padding: 1.5rem 1rem;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.review--reply {
+  margin: 1rem 5rem 2rem 5rem;
+}
+
+.review__head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #645d5d;
+  padding-bottom: .5rem;
+}
+
+.review__head .reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 100;
+}
+
+.review__head .reviewer__img {
+  height: 45px;
+  width: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.review__head .reviewer__username {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 .5rem 0 .2rem;
+  color: #007a33;
+  text-decoration: underline;
+}
+
+.review__details {
+  padding-left: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review__toggler {
+  font-size: .8rem;
+  color: #007a33;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.review__toggler:hover {
+  cursor: pointer;
+}
+
+.review__title {
+  font-size: 1.5rem;
+}
+
+.review__body {
+  padding-top: 1rem;
+}
+
+.review__body .show-reply-btn {
+  border: none;
+  text-decoration: underline;
+  font-size: .7rem;
+  color: #007a33;
+  margin-left: 1rem;
+}
+
+.review__body .show-reply-btn:hover {
+  cursor: pointer;
+}
+
+.review__reply {
+  padding: 1rem 0;
+}
+
+.review__reply textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.review__reply button {
+  border: none;
+  color: #ffffff;
+  background-color: #007a33;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px #aba4a4;
+          box-shadow: 5px 5px 10px #aba4a4;
+}
+
+.review__reply button:hover {
+  cursor: pointer;
+}
+
+.list {
+  list-style-position: inside;
+}
+
+.list__menu {
+  margin-left: 1rem;
+}
+
+.list__title {
+  color: #007a33;
+  font-size: 2rem;
+}
+
+.list__sub-title {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.list__item {
+  padding-top: 1rem;
+  color: #645d5d;
+}
+
+.list__item p {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .cta-container {

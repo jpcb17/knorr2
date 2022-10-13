@@ -44,6 +44,11 @@
             visibility: visible;
         }
 
+        &:hover > .browse{
+            opacity: 1;
+            visibility: visible;
+        }
+
         &:hover > a > i{
             transition: all 1s;
             transform: rotate(-180deg);
@@ -53,6 +58,53 @@
             color:$white;
             margin-top: 1rem;
             margin-left: 0;
+        }
+
+        .browse{
+            display: flex;
+            flex-direction: row;
+            background-color: $green;
+
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            background-color: $green;
+            border:1px solid $green;
+
+            position: absolute;
+            margin-top: 1rem;
+            margin-left: -1.5rem;
+            padding:1.5rem;
+            border-radius: 5px;
+
+            &__title{
+                color:$yellow;
+                font-size: 1.5rem;
+            }
+
+            &__menu{
+                list-style-type: none;
+                padding: 1rem;
+                
+            }
+            &__item{
+                text-decoration: none;
+
+                &--title{
+                }
+            }
+
+            &__link{
+                text-decoration: none;
+                color:$white;
+                font-size: 1rem;
+                line-height: 1.5rem;
+
+                &:hover{
+                    border-bottom: 2px solid $white;
+                }
+            }
+
         }
     }
 
