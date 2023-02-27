@@ -1,8 +1,7 @@
 .tag-container{
     display: flex;
     padding:1rem;
-
-
+    flex-wrap: wrap;
 }
 
 .tag{
@@ -14,6 +13,14 @@
     font-size: 1.2rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
+    white-space: nowrap;
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: .7rem;
+        padding: .4rem .75rem;
+        margin-left: .3rem;
+        margin-bottom: .1rem;
+    }
 
     &--sm{
         letter-spacing: 1px;

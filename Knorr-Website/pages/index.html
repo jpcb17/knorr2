@@ -20,7 +20,7 @@
 <body>
     <div class="hero">
         <div class="hero__overlay">
-            <div class="global-navigation-wrapper">
+            <div class="global-nav__wrapper">
                 <div class="global-nav">
                     <div class="">
                         <a href="./index.html">
@@ -85,10 +85,62 @@
                     </nav>
                 </div>
             </div>
+
+            <div class="global-nav__wrapper mobile">
+                <ul class="global-nav__mobile__list">
+                    <li class="global-nav__mobile__list__item">
+                        <i class="global-nav__mobile__list__item__icon fa-solid fa-bars" id="nav-i-bars"></i>
+                    </li>
+                    <li class="global-nav__mobile__list__item">
+                        <img class="global-nav__logo mobile" src="../assets/images/knorr-logo.webp" alt="">
+                    </li>
+                    <li class="global-nav__mobile__list__item__icon global-nav__mobile__list__item">
+                        <i class="fa-solid fa-search"></i>
+                    </li>
+                </ul>
+
+                <nav class="global-nav__mobile__nav hidden">
+                    <div class="global-nav__mobile__nav__left">
+                        <i class="global-nav__mobile__nav__icon fa fa-close" id="nav-i-close-left"></i>
+                        <ul class="global-nav__mobile__nav__list">
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    All Recipes <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Ingredients
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Cuisines
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Time of day
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Meal Plans
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Recipe Tips
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
 
-    <div class="section section--">
+    <div class="section section--page-listing">
             <h4 class="section__title">Ano'ng hanap natin today ?</h4>
             <div class="section__body">
 
@@ -116,7 +168,7 @@
         
     </div>
 
-    <div class="section section--centered">
+    <div class="section section--centered section--card-gallery">
         <h3 class="section__title">Discover Nutri-Sarap Recipes</h3>
         <p class="section__description">Our featured dishes are cooked with fresh and nutritious ingredients made more delicious with Knorr.</p>
 
@@ -359,7 +411,7 @@
         </div>
     </div>
 
-    <a class="scroll" href="#nav"><i class="fa fa-angle-left"></i> <span>Scroll</span></a>
+    <!-- <a class="scroll" href="#nav"><i class="fa fa-angle-left"></i> <span>Scroll</span></a> -->
     <footer class="footer">
         <div class="footer__container">
             <ul class="list list--chat">
@@ -391,5 +443,7 @@
         </div>
     </footer>
     
+
+    <script src="../assets/js/components/global/navigation.js"></script>
 </body>
 </html>

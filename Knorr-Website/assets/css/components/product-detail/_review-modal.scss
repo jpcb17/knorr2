@@ -50,6 +50,10 @@
         width: 100%;
         height: 100%;
         display: flex;
+
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+        }
     }
 
     &__col{

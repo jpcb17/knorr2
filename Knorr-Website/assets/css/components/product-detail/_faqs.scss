@@ -2,7 +2,11 @@
     // border:1px solid black;
     border:none;
     box-shadow: 5px 5px 15px #cfcdcd;
-    width: 80%;    
+    width: 80%;
+    
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+    }
 
     &-wrapper{
         width: 100%;
@@ -24,12 +28,18 @@
         span{
             cursor: pointer;
         }
+        @media (max-width: $breakpoint-tablet) {
+            align-items: flex-start;
+        }
     }
 
     &__label{
         font-size: 1.1rem;
         letter-spacing: 2px;
         color:$gray;
+        @media (max-width: $breakpoint-mobile) {
+            font-size: .8rem;
+        }
     }
 
     &__text{

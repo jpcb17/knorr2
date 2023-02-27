@@ -44,14 +44,24 @@
 
 }
 .story-card-gallery{
+    width: 100%;
     margin-top: 7rem;
     display: flex;
     flex-direction: column;
+    @media (max-width: $breakpoint-mobile) {
+        margin: 0;
+    }
 
     .row{
         display: flex;
+        @media (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+        }
         .col{
             margin-right:2rem;
+            @media (max-width: $breakpoint-mobile) {
+                margin: 0;
+            }
 
             .story-card{
                 height: 30vw;
@@ -59,6 +69,11 @@
                 // border-radius: 25px;
                 position: relative;
                 box-shadow: 10px 10px 25px 0px rgba(148,138,138,0.75);
+                @media (max-width: $breakpoint-mobile) {
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+                }
 
 
                 &__img{
@@ -85,7 +100,9 @@
                 &--left{
                     margin-bottom: 25%;
                     margin-top:-25%;
-                    
+                    @media (max-width: $breakpoint-mobile) {
+                        margin: 0;
+                    }
                 }
 
                 &--last{
@@ -103,6 +120,9 @@
 
                 &--right{
                     margin-top: 25%;
+                    @media (max-width: $breakpoint-mobile) {
+                        margin: 0;
+                    }
                 }
             }
 

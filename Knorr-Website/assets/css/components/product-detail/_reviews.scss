@@ -24,6 +24,10 @@
         align-items: center;
         border-bottom: 1px solid $gray;
         padding-bottom: .5rem;
+
+        @media (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+        }
         .reviewer{
             display: flex;
             justify-content: flex-start;
