@@ -1,0 +1,121 @@
+.review-thread{
+    // border:1px solid black;
+    padding: 1.5rem 1rem;
+    background-color: $gray-light;
+    width: 100%;
+}
+
+
+.review{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 2rem;
+    // border-left:1px solid $gray;
+
+    &--reply{
+        margin: 1rem 5rem 2rem 5rem;
+    }
+
+    &__head{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid $gray;
+        padding-bottom: .5rem;
+
+        @media (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+        }
+        .reviewer{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: 100;
+            &__img{
+                height: 45px;
+                width: 45px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            &__username{
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 0 .5rem 0 .2rem;
+                color:$green;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__details{
+        padding-left: .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__toggler{
+        font-size: .8rem;
+        color:$green;
+        border:none;
+        position: absolute;
+        right: 0;
+        top:0;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__title{
+        font-size: 1.5rem;
+   
+    }
+
+    &__body{
+        // display: none;
+        padding-top: 1rem;
+
+        .show-reply-btn{
+            border: none;
+            text-decoration: underline;
+            font-size: .7rem;
+            color:$green;
+            margin-left: 1rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    &__reply{
+        padding: 1rem 0;
+
+        
+
+        textarea{
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        button{
+            border: none;
+            color:$white;
+            background-color: $green;
+            padding:.5rem 1rem;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px #aba4a4;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,90 @@
+.recipe-card-gallery{
+        // background-color: red;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .recipe-card{
+            margin-right: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            // width: 300px;
+            // flex:1;
+            width: 15vw;
+            height: auto;
+            color:green;
+
+
+            &--border-green{
+                border:5px solid green;
+            }
+
+
+
+            @media (max-width: $breakpoint-tablet) {
+                // border:5px solid green;
+                width: 35vw;
+                margin-top: 1rem;
+                &:nth-child(even){
+                    margin-right: 0;
+                }
+            }
+
+            &--green{
+                background: rgb(6,61,2);
+                background: radial-gradient(circle, rgba(6,61,2,1) 0%, rgba(6,61,2,0.5564600840336135) 100%);
+                color:$white;
+                // border:5px solid green;
+            }
+
+            &__head{
+                width: 100%;
+                &--green{
+                    // background: rgb(6,61,2);
+                    // background: radial-gradient(circle, rgba(6,61,2,1) 0%, rgba(6,61,2,0.5564600840336135) 100%);
+                    padding: 1rem 1.5rem;
+                    padding-top:2rem;
+                    height: 75%;
+                }
+                height: 60%;
+                // height: 70%;
+            }
+
+            &__img{
+                width: 100%;
+                height: 100%;
+            }
+
+            &__body{
+                height: 40%;
+                width: 100%;
+                padding: 1rem .5rem 1.5rem 1rem;
+                
+            }
+
+            &__title{
+                font-weight: 500;
+                color:inherit;
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+                height: 20%;
+            }
+
+            &__info{
+                padding-top: 1.5rem;
+                height: 20%;
+                margin-top: 1em;
+                :not(:first-child){
+                    margin-left: 1em;
+                }
+                color:$gray;
+                
+            }
+        }
+
+
+         
+    }
+
+    

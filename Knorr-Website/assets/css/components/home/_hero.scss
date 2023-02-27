@@ -1,0 +1,14 @@
+.hero{
+    height: 80vh;
+    background-color: $green;
+    background-image: url('../images/knorr-bg1.webp');
+    background-size: cover;
+    background-position: center;
+    &__overlay{
+        height: 100%;
+        width: 100%;
+        background: rgb(70,166,71);
+        background: linear-gradient(0deg, rgba(70,166,71,0) 0%, rgba(223,177,177,0) 52%, rgba(6,61,2,1) 100%);
+    }
+}
+

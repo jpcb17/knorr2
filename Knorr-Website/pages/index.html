@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knorr | Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css", integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==", crossorigin="anonymous", referrerpolicy="no-referrer">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero__overlay">
+            <div class="global-nav__wrapper">
+                <div class="global-nav">
+                    <div class="">
+                        <a href="./index.html">
+                        <img class="global-nav__logo" src="../assets/images/knorr-logo.webp" alt="">
+                    </a>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="#">Recipes <i class="fa fa-caret-down"></i></a>
+                                <ul class="nav__list nav__list--sub">
+                                    <li class="nav__item nav__item--sub"><a class="nav__link" href="#">All Recipes</a></li>
+                                    <li class="nav__item nav__item--sub"><a class="nav__link" href="#">Ingredients</a></li>
+                                    <li class="nav__item nav__item--sub"><a class="nav__link" href="#">Cuisines</a></li>
+                                    <li class="nav__item nav__item--sub"><a class="nav__link" href="#">Time of Day</a></li>
+                                    <li class="nav__item nav__item--sub"><a class="nav__link" href="#">Meal Plans</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav__item">
+                                <a class="nav__link"href="">Browse</a>
+                                <div class="browse">
+                                    <ul class="browse__menu">
+                                        <li class="browse__item browse__item--title">
+                                            <span class="browse__title">Cubes</span>
+                                        </li>
+                                        <li class="browse__item">
+                                            <a href="./products/knorr-chicken-cubes.html" class="browse__link">Chicken Cubes</a>
+                                        </li>
+                                        <li class="browse__item">
+                                            <a href="./products/knorr-pork-cubes.html" class="browse__link">Pork Cubes</a>
+                                        </li>
+                                        <li class="browse__item">
+                                            <a href="./products/knorr-shrimp-cubes.html" class="browse__link">Shrimp Cubes</a>
+                                        </li>
+                                        <li class="browse__item">
+                                            <a href="./products/knorr-beef-cubes.html" class="browse__link">Beef Cubes</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="browse__menu">
+                                        <li class="browse__item browse__item--title">
+                                            <span class="browse__title">Recipe Mix</span>
+                                        </li>
+                                        <li class="browse__item">
+                                            <a href="./products/knorr-sinigang-sampaloc.html" class="browse__link">Sinigang sa Sampaloc Mix</a>
+                                        </li>
+                                        <li class="browse__item">
+                                            <a href="./products/knorr-ginataang-gulay.html" class="browse__link">Ginataang Gulay Mix</a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+
+                            </li>
+
+                            <li class="nav__item"><a class="nav__link" href="./products.html">Our Products</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Our Purpose</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Real Stories</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Sign Up</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Tips and Tricks</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Search <i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="global-nav__wrapper mobile">
+                <ul class="global-nav__mobile__list">
+                    <li class="global-nav__mobile__list__item">
+                        <i class="global-nav__mobile__list__item__icon fa-solid fa-bars" id="nav-i-bars"></i>
+                    </li>
+                    <li class="global-nav__mobile__list__item">
+                        <img class="global-nav__logo mobile" src="../assets/images/knorr-logo.webp" alt="">
+                    </li>
+                    <li class="global-nav__mobile__list__item__icon global-nav__mobile__list__item">
+                        <i class="fa-solid fa-search"></i>
+                    </li>
+                </ul>
+
+                <nav class="global-nav__mobile__nav hidden">
+                    <div class="global-nav__mobile__nav__left">
+                        <i class="global-nav__mobile__nav__icon fa fa-close" id="nav-i-close-left"></i>
+                        <ul class="global-nav__mobile__nav__list">
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    All Recipes <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Ingredients
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Cuisines
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Time of day
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Meal Plans
+                                </a>
+                            </li>
+                            <li class="global-nav__mobile__nav__list__item">
+                                <a class="global-nav__mobile__nav__list__link" href="#">
+                                    Recipe Tips
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section--page-listing">
+            <h4 class="section__title">Ano'ng hanap natin today ?</h4>
+            <div class="section__body">
+
+                <div class="page-listing-card">
+                    <img class="page-listing-card__img" src="../assets/images/page-listing-1.webp" alt="">
+                    <h3 class="page-listing-card__title">Recipe Ideas</h3>
+                </div>
+
+                <div class="page-listing-card">
+                    <img class="page-listing-card__img" src="../assets/images/page-listing-2.webp" alt="">
+                    <h3 class="page-listing-card__title">Knorr Products</h3>
+                </div>
+
+                <div class="page-listing-card">
+                    <img class="page-listing-card__img" src="../assets/images/page-listing-3.webp" alt="">
+                    <h3 class="page-listing-card__title">Nutri-Sarap Para sa Malusog na Bukas</h3>
+                </div>
+
+                <div class="page-listing-card">
+                    <img class="page-listing-card__img" src="../assets/images/page-listing-4.webp" alt="">
+                    <h3 class="page-listing-card__title">Nutri-Sarap Stories of Success</h3>
+                </div>
+
+            </div>
+        
+    </div>
+
+    <div class="section section--centered section--card-gallery">
+        <h3 class="section__title">Discover Nutri-Sarap Recipes</h3>
+        <p class="section__description">Our featured dishes are cooked with fresh and nutritious ingredients made more delicious with Knorr.</p>
+
+        <p class="section__description">Discover your own Nutri-Sarap story through our favorite recipes!</p>
+
+        <div class="section__search">
+            <i class="fa fa-search icon icon--left"></i>
+            <input type="text">
+            <i class="fa fa-arrow-right icon icon--right"></i>
+        </div>
+
+        <div class="section__body">
+            <div class="recipe-card-gallery">
+
+                <div class="recipe-card">
+                    <div class="recipe-card__head">
+                        <img class="recipe-card__img" src="../assets/images/recipe-singang-na-bangus.jpeg" alt="">
+                        <!-- <p class="recipe-card__rating"><i class="fa fa-star"></i></p> -->
+                    </div>
+                    <div class="recipe-card__body">
+                        <h4 class="recipe-card__title">Sinigang Na Bangus Recipe</h4>
+                        <div class="recipe-card__info">
+                            <span><i class="fa fa-clock"></i> 40mins</span>
+                            <span><i class="fa fa-users"></i> 4 servings</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-card__head">
+                        <img class="recipe-card__img" src="../assets/images/recipe-singang-na-bangus.jpeg" alt="">
+                        <!-- <p class="recipe-card__rating"><i class="fa fa-star"></i></p> -->
+                    </div>
+                    <div class="recipe-card__body">
+                        <h4 class="recipe-card__title">Chicken Tinola</h4>
+                        <div class="recipe-card__info">
+                            <span><i class="fa fa-clock"></i> 40 mins</span>
+                            <span><i class="fa fa-users"></i> 5 servings</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-card__head">
+                        <img class="recipe-card__img" src="../assets/images/recipe-singang-na-bangus.jpeg" alt="">
+                        <!-- <p class="recipe-card__rating"><i class="fa fa-star"></i></p> -->
+                    </div>
+                    <div class="recipe-card__body">
+                        <h4 class="recipe-card__title">Sinigang Na Bangus Recipe</h4>
+                        <div class="recipe-card__info">
+                            <span><i class="fa fa-clock"></i> 40 mins</span>
+                            <span><i class="fa fa-thin fa-users"></i> 5 servings</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-card__head">
+                        <img class="recipe-card__img" src="../assets/images/recipe-singang-na-bangus.jpeg" alt="">
+                        <!-- <p class="recipe-card__rating"><i class="fa fa-star"></i></p> -->
+                    </div>
+                    <div class="recipe-card__body">
+                        <h4 class="recipe-card__title">Sinigang Na Bangus Recipe</h4>
+                        <div class="recipe-card__info">
+                            <span><i class="fa fa-clock"></i> 40 mins</span>
+                            <span><i class="fa fa-thin fa-users"></i> 5 servings</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section section--centered">
+        <h3 class="section__title">Nutri-Sarap Stories of Success</h3>
+        <p class="section__description"><span>Real people and stories of success.</span>
+            <span>Explore how nutritious cooking paved the way for a brighter and healthier future for many!</span></p>
+        
+        <div class="section__body">
+            <div class="story-card-gallery">
+                <div class="row">
+                    <div class="col">
+                        <div class="story-card story-card--left">
+                            <img class="story-card__img" src="../assets/images/s1.webp" alt="">
+                            <div class="story-card__body">
+                                <h4 class="story-card__title">Kwentong talino ni Teach Fe</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="story-card story-card--right">
+                            <img class="story-card__img" src="../assets/images/s2.webp" alt="">
+                            <div class="story-card__body">
+                                <h4 class="story-card__title">Kwentong galing ni Doc Otit</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="story-card story-card--left">
+                            <img class="story-card__img" src="../assets/images/s3.webp" alt="">
+                            <div class="story-card__body">
+                                <h4 class="story-card__title">Kwentong gilas ni Marc Pingris</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="cta-container">
+                    <a class="btn"href="">Listen to their Stories</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-movement">
+        <div class="hero-movement">
+           
+            <img class="hero-movement__img" src="../assets/images/movement.webp" alt="Movement">
+            <div class="hero-movements__overlay"></div>
+            
+            <div class="hero-movement__body">
+                <h3 class="hero-movement__title">Nutri-Sarap para sa Malusog na Bukas</h3>
+                <p class="hero-movement__description">
+                    Nutri-Sarap para sa Malusog na Bukas. We are spearheading a movement to help teach Filipinos make more nutritious meals one plate a time.  For years, we have touched more than a million lives, and we are planning for another in the years to come.  
+                </p>
+
+                <button class="hero-movement__cta">JOIN OUR MOVEMENT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-nutri">
+        <div class="hero-nutri">
+            <div class="hero-nutri__head">
+                <h3 class="hero-nutri__title">Nutri Sarap Products</h3>
+            <p class="hero-nutri__description">
+                Our products are new and improved: now containing essential vitamins and minerals to boost immunity.</p>
+                <p>Together, let's transform one billion meals to become nutritious and delicious.</p>
+            </div>
+            <div class="hero-nutri__body">
+                <div class="hero-nutri__body__overlay"></div>
+                <img class="hero-nutri__img" src="../assets/images/nutri-sarap.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section__title">New in our range</h3>
+
+        <div class="section__body">
+
+            <div class="product-card-container">
+
+                <div class="product-card">
+                    <div class="product-card__head">
+                        <img class="product-card__img" src="../assets/images/product1.webp" alt="">
+                    </div>
+
+                    <div class="product-card__body">
+                        <h4 class="product-card__title">Knorr Chicken Cube</h4>
+                        <button class="product-card__cta">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__head">
+                        <img class="product-card__img" src="../assets/images/product2.webp" alt="">
+                    </div>
+
+                    <div class="product-card__body">
+                        <h4 class="product-card__title">Knorr Pork Cube</h4>
+                        <button class="product-card__cta">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__head">
+                        <img class="product-card__img" src="../assets/images/product3.webp" alt="">
+                    </div>
+
+                    <div class="product-card__body">
+                        <h4 class="product-card__title">Knorr Sinigang sa Sampalok Original</h4>
+                        <button class="product-card__cta">Quick View</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__head">
+                        <img class="product-card__img" src="../assets/images/product4.webp" alt="">
+                    </div>
+
+                    <div class="product-card__body">
+                        <h4 class="product-card__title">Knorr Sinigang sa Gabi</h4>
+                        <button class="product-card__cta">Quick View</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section__title">Tips and Tricks</h3>
+        <!-- <p class="section-story__description"><span>Real people and stories of success.</span>
+            <span>Explore how nutritious cooking paved the way for a brighter and healthier future for many!</span></p> -->
+        
+        <div class="section__body">
+            <div class="story-card-gallery">
+            <div class="row">
+                <div class="col">
+                    <div class="story-card story-card--left">
+                        <img class="story-card__img" src="../assets/images/tricks1.webp" alt="">
+                        <div class="story-card__body">
+                            <h4 class="story-card__title">Asim-Kilig Sinigang Recipes</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="story-card story-card--right">
+                        <img class="story-card__img" src="../assets/images/tricks2.webp" alt="">
+                        <div class="story-card__body">
+                            <h4 class="story-card__title">Nutritious & Delicious Recipes</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <a class="btn"href="">discover more</a>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- <a class="scroll" href="#nav"><i class="fa fa-angle-left"></i> <span>Scroll</span></a> -->
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="list list--chat">
+                <li class="list__item"><a class="list__link" href="">Live Chat (Online)</i></a></li>
+                <li class="list__item"><a class="list__link start" href="">Start</a></li>
+
+            </ul>
+            <ul class="list list--social">
+                <li class="list__item"><a class="list__link" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="list__item"><a class="list__link" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="list__item"><a class="list__link" href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+
+            <ul class="list list--notice">
+                <li class="list__item"><a class="list__link" href="">Cookie Notice</a></li>
+                <li class="list__item"><a class="list__link" href="">Privacy Notice</a></li>
+                <li class="list__item"><a class="list__link" href="">Legal Notice</a></li>
+                <li class="list__item"><a class="list__link" href="">About Us</a></li>
+                <li class="list__item"><a class="list__link" href="">Contact Us</a></li>
+                <li class="list__item"><a class="list__link" href="">Accessibility</a></li>
+            </ul>
+
+            <ul class="list list--others">
+                <li class="list__item"><a class="list__link" href="">Site Map</a></li>
+                <li class="list__item"><a class="list__link" href="">Frequently Asked Questions</a></li>
+                <li class="list__item"><a class="list__link" href="">Sign Up</a></li>
+                <li class="list__item"><a class="list__link" href="">Philippines <i class="fa fa-external-link-alt"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+
+    <script src="../assets/js/components/global/navigation.js"></script>
+</body>
+</html>

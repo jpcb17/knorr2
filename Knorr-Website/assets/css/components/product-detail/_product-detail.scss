@@ -1,0 +1,249 @@
+.product-detail-container{
+    width: 100%;
+    display: flex;
+
+    @media (max-width:$breakpoint-mobile) {
+        flex-wrap: wrap;
+    }
+
+    &--green{
+        background-color: $green;
+
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+            padding-left: 0;
+        }
+    }
+}
+
+.product-detail{
+    &__img-wrapper{
+        position: relative;
+        padding:2rem;
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        background: rgb(6,61,2);
+        background: radial-gradient(circle, rgba(6,61,2,1) 0%, rgba(6,61,2,0.5564600840336135) 100%);
+
+        @media (max-width:$breakpoint-mobile) {
+            flex: none;
+            width: 100%;
+        }
+    }
+
+
+    &__img{
+        width: 80%;
+    }
+
+    
+
+    &__icon-wrapper{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 70px;
+        background-color: $green-dark;
+        border-radius: 50%;
+        color:$white;
+        right: 5%;
+        bottom: 5%;
+        // box-shadow: 5px 5px 50px 0px rgb(215 215 215) 100%;
+        box-shadow: 10px 10px 25px 0px rgba(148,138,138,0.75);
+
+    }
+
+    &__icon{
+        font-size: 1.5rem;
+    }
+
+    &__details{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 5rem;
+
+        @media (max-width:$breakpoint-mobile) {
+            margin-top: 1rem;
+            flex: none;
+            width: 100%;
+            padding-left: 0;
+        }
+
+        &--more{
+            padding-left: 5rem;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: $breakpoint-tablet) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__description{
+        color:$gray;
+        line-height: 1.5rem;
+        font-weight: 200;
+
+        &--white{
+            color:$white;
+        }
+    }
+
+    &__title{
+
+        color:$white;
+        font-size: 2.5rem;
+        padding:2rem 0 1rem 0;
+        line-height: 2.5rem;
+
+        &--green{
+            color:$green;
+            @media (max-width:$breakpoint-tablet) {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    &__buy{
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        box-shadow: 10px 10px 25px 0px rgba(148,138,138,0.75);
+        width: 70%;
+        padding:1.2rem .8rem;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color:$white;
+        background-color: $green;
+        border-radius: 5px;
+        border:none;
+        margin-top: 1rem;
+
+        @media (max-width:$breakpoint-tablet) {
+            font-size: .7rem;
+            padding:.8rem .4rem;
+        }
+    }
+
+
+    &__icon-card-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        .icon-card{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+
+            @media (max-width: $breakpoint-mobile) {
+                width: 170px;
+                flex: none;
+            }
+
+            &__icon-wrapper{
+                padding: 1rem;
+            }
+
+            &__icon{
+                font-size: 2.5rem;
+                color:$white;
+            }
+
+            &__description-wrapper{
+                padding: 1rem;
+                height: 100px;
+            }
+
+            &__description{
+                font-weight: 500;
+                text-align: center;
+                color:$white;
+            }
+        }
+    }
+
+
+    &__nutrition{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        padding:1rem;
+        // border:2px solid black;
+        @media (max-width: $breakpoint-mobile) {
+            flex: none;
+            width: 100%;
+        }
+
+
+        .nutrition-card{
+            display: flex;
+            flex-direction: column;
+            // border:1px solid red;
+            // @media (max-width: $breakpoint-mobile) {
+            //     width: 100%;
+            // }
+
+            &__title{
+                font-weight: 500;
+                font-size: 1.5rem;
+                color:$green;
+                padding: 1rem 0;
+            }
+
+            &__description{
+                color:$gray;
+                font-weight: 300;
+                font-size: 1rem;
+                line-height: 1.5em;
+            }
+        }
+
+        .nutrition-table{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+
+            &--bordered{
+                .row{
+                    border-bottom: 1px solid lightgray;
+                    
+                }
+            }
+
+            &__title{
+                font-weight: 500;
+                font-size: 1.5rem;
+                color:$green;
+                padding: 1rem 0;
+            }
+
+            .row{
+                display: flex;
+                justify-content: space-between;
+                padding: 0.75rem 0;
+                font-weight: 500;
+                color:$gray;
+            }
+        }
+    }
+}
+
+
+
+
+

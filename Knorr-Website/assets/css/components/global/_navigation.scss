@@ -1,0 +1,223 @@
+.global-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__logo{
+        width: 108px;
+        height: 108px;
+
+        &.mobile{
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__wrapper{
+        display: block;
+
+        @media (max-width: $breakpoint-tablet){
+            display: none;
+        }
+
+        &.mobile{
+            display: none;
+            @media (max-width: $breakpoint-tablet){
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__mobile{
+
+
+        &__list{
+            background-color: $white;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            padding:25px;
+          
+
+            &__item{
+                color: $green;
+
+
+                &__icon{
+                    color:$green;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &__nav{
+            position: fixed;
+            top:0;
+            left: 0;
+            z-index: 999;
+            width: 100vw;
+            height: 100%;
+            background-color: green;
+            padding: 25px;
+            display: block;
+
+            &.hidden{
+                display: none;
+            }
+
+            &__icon{
+                color: $white;
+                font-size: 30px;
+            }
+
+            &__list{
+                margin-top: 25px;
+                margin-left: 25px;
+                list-style-type: none;
+
+                &__item{
+                    margin-bottom: 30px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &__link{
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.nav{
+    z-index: 999;
+    color: $white;
+    display: block;
+    @media (max-width: $breakpoint-mobile){
+        background-color: orange;   
+    }
+    
+    @media (max-width: $breakpoint-tablet){
+        background-color: red;   
+    }
+
+    &.mobile{
+        background-color: black;
+    }
+    
+    &--green{
+        color:$green;
+    }
+    &__list{
+        display: flex;
+        list-style-type: none;
+
+        &--sub{
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            display: block;
+            background-color: $green;
+            border:1px solid $green;
+
+            position: absolute;
+            margin-top: 1rem;
+            margin-left: -1.5rem;
+            padding:1.5rem;
+            border-radius: 5px;
+            
+        }
+    }
+
+    &__item{
+        font-weight: bold;
+        margin-left: 2.5rem;
+        border-bottom: 2px solid transparent;
+    
+        &:hover > ul{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:hover > .browse{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:hover > a > i{
+            transition: all 1s;
+            transform: rotate(-180deg);
+        }
+
+        &--sub{
+            color:$white;
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+
+        .browse{
+            display: flex;
+            flex-direction: row;
+            background-color: $green;
+
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            background-color: $green;
+            border:1px solid $green;
+
+            position: absolute;
+            margin-top: 1rem;
+            margin-left: -1.5rem;
+            padding:1.5rem;
+            border-radius: 5px;
+
+            &__title{
+                color:$yellow;
+                font-size: 1.5rem;
+            }
+
+            &__menu{
+                list-style-type: none;
+                padding: 1rem;
+                
+            }
+            &__item{
+                text-decoration: none;
+
+                &--title{
+                }
+            }
+
+            &__link{
+                text-decoration: none;
+                color:$white;
+                font-size: 1rem;
+                line-height: 1.5rem;
+
+                &:hover{
+                    border-bottom: 2px solid $white;
+                }
+            }
+
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color:inherit;
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+        &:hover{
+            border-bottom: 2px solid $white;
+        }
+        
+        
+    }
+}
+

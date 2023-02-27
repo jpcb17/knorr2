@@ -1,0 +1,56 @@
+@import './vars';
+@import './default';
+@import './components/global/section';
+@import './components/global/navigation';
+@import './components/global/footer';
+@import './components/global/scroll';
+
+//HOME
+@import './components/home/hero';
+@import './components/home/page-listing';
+@import './components/home/recipe-card-gallery';
+@import './components/home/story-card-gallery';
+@import './components/home/hero-movement';
+@import './components/home/hero-nutri';
+@import './components/home/product-card-gallery';
+
+//products
+@import './components/products/featured-product';
+@import './components/products/tag';
+
+//product-detail
+@import './components/product-detail/product-detail';
+@import './components/product-detail/carousel';
+@import './components/product-detail/faqs';
+@import './components/product-detail/tabs';
+@import './components/product-detail/review-modal';
+@import './components/product-detail/reviews';
+@import './components/product-detail/list';
+.cta-container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.btn{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    box-shadow: 10px 10px 25px 0px rgba(148,138,138,0.75);
+    width: 40vw;
+    padding:1.2rem .8rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $green;
+    $color:$white;
+
+    &:visited{
+        color: $white;
+    }
+
+}

@@ -1,0 +1,77 @@
+.section-movement{
+    background-color: $white;
+    color:$white;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.hero-movement{
+    position: relative;
+    height: 70vh;
+    @media (max-width: $breakpoint-mobile) {
+        height: 35vh;
+    }
+    &__overlay{
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(223,177,177,0) 52%, rgba(26,164,27,0.7133228291316527) 100%);
+    }
+
+    &__body{
+        z-index: 2;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        padding:2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__title{
+        padding: 2rem 5rem;
+        font-size: 3.5rem;
+        font-weight: bold;
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 32px;
+        }
+    }
+
+    &__description{
+        margin-top: .5rem;
+        width: 70%;
+        font-size: 1.1rem;
+        text-align: center;
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 15px;
+        }
+    }
+
+    &__img{
+        padding: .5rem .5rem 0 .5rem;
+        height: 100%;
+        width: 100%;
+        filter: blur(8px);
+    }
+
+    &__cta{
+        border:0;
+        margin-top: 2rem;
+        box-shadow: 10px 10px 25px 0px rgba(148,138,138,0.75);
+        padding: 1.5rem 2.5rem;
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-size: 1rem;
+        background-color: $green;
+        color:$white;
+    }
+}
